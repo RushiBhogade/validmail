@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+    function email()
+    {
+   var mail =document.getElementById("text").value;
+   var reg= /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+   var ph= document.getElementById("ph").value;
+   var rag= /^\+?\d{10,12}$/
+   var name= document.getElementById("name").value;
+   var regex=/^[A-Za-z]+(?: [A-Za-z]+)?$/
+   var name2=document.getElementById("name2").value;
+   
+   if(!reg.test(mail)){
+       alert("invalid mail")
+       return false;
+    }
+    if(!rag.test(ph)){
+        alert("invaild no")
+        return false;
+    }
+    if(!regex.test(name)){
+        alert("invalid first name")
+        return false;
+    }
+    if(!regex.test(name2)){
+        alert("inavalid last name")
+        return false;
+    }
+    else
+    {
+        alert("valid from ")
+        return true;
+    }
+         
+    }
+    </script>
+    <link rel="stylesheet" href="rushi.css" >
+    
+</head>
+<body class="rrr">
+    <center><h1>From Validation</h1><br>
+                <form >
+                   <div class="hi">
+                    <input id="name" placeholder="First Name " type="text" ><br><br>
+                    <input id="name2" placeholder="Last Name" type="text"><br><br>
+                    <input id="ph" placeholder="Ph.no" type="number"><br><br>
+                    <input id="text" placeholder="email" type="email" ><br><hr>
+                    <button onclick="email()" type="button">submit</button>
+                    </div></center>
+                </form>
+                <div class="button">
+                    <a  href="https://www.youtube.com/@bhogadevines1440/featured"><img src="hi.svg" alt="youtube" height="100" width="200"></a>
+                    <a href="https://instagram.com/_rushi.16_?igshid=ZDdkNTZiNTM="><img src="hii.svg" alt="instagram" height="100" ></a>
+                    <a href="https://www.linkedin.com/in/rushikesh-bhogade-4177a1250"><img src="hee.svg" alt="linkedin" height="100"></a>
+                </div>
+               
+</body>
+</html>
